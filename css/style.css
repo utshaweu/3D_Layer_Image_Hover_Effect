@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+img{
+    vertical-align: middle;
+    border: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.effect{
+    position: relative;
+    width: 250px;
+    height: 415px;
+    background: rgba(0,0,0,0.1);
+    transform: rotate(-30deg) skew(25deg);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.effect img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+.effect:hover img:nth-child(4){
+    transform: translate(120px,-120px);
+    opacity: 1;
+}
+
+.effect:hover img:nth-child(3){
+    transform: translate(90px,-90px);
+    opacity: .8;
+}
+
+.effect:hover img:nth-child(2){
+    transform: translate(60px,-60px);
+    opacity: .6;
+}
+
+.effect:hover img:nth-child(1){
+    transform: translate(30px,-30px);
+    opacity: .4;
+}
